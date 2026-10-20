@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- NOTE: REQUEST_INSTALL_PACKAGES (declared in the main manifest) must NOT be removed here.
+         Unlike the upstream InnerTune FOSS builds that update via F-Droid, this fork distributes
+         the FOSS APK from GitHub and updates itself through the in-app updater — so FOSS builds
+         need install-from-self capability. Removing it made the Update screen's Install button
+         throw SecurityException ("Need to declare android.permission.REQUEST_INSTALL_PACKAGES"). -->
+    <application>
+        <!-- Remove Cast provider in FOSS build since GMS is not available -->
+        <meta-data
+            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+            tools:node="remove" />
+    </application>
+</manifest>

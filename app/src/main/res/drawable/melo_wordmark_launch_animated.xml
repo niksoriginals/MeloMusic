@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Melo wordmark launch animation, built exactly like Meta's Threads (Barcelona)
+  wordmark AVD: 15 stroke targets, every target on a 1000 ms timeline, with the
+  original seven cubic-bezier interpolators and per-letter staging.
+
+  Only the animated property differs from the extracted Threads file:
+  Threads animates trimPathStart (the extracted AVD is authored for reverse
+  playback), we animate trimPathEnd so the strokes draw forward in reading
+  order on Compose's AnimatedImageVector.
+-->
+<animated-vector android:drawable="@drawable/melo_wordmark_launch_vector"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target android:name="stroke_0" android:animation="@animator/melo_wordmark_launch_stroke_00" />
+    <target android:name="stroke_1" android:animation="@animator/melo_wordmark_launch_stroke_01" />
+    <target android:name="stroke_2" android:animation="@animator/melo_wordmark_launch_stroke_02" />
+    <target android:name="stroke_3" android:animation="@animator/melo_wordmark_launch_stroke_03" />
+    <target android:name="stroke_4" android:animation="@animator/melo_wordmark_launch_stroke_04" />
+    <target android:name="stroke_5" android:animation="@animator/melo_wordmark_launch_stroke_05" />
+    <target android:name="stroke_6" android:animation="@animator/melo_wordmark_launch_stroke_06" />
+    <target android:name="stroke_7" android:animation="@animator/melo_wordmark_launch_stroke_07" />
+    <target android:name="stroke_8" android:animation="@animator/melo_wordmark_launch_stroke_08" />
+    <target android:name="stroke_9" android:animation="@animator/melo_wordmark_launch_stroke_09" />
+    <target android:name="stroke_10" android:animation="@animator/melo_wordmark_launch_stroke_10" />
+    <target android:name="stroke_11" android:animation="@animator/melo_wordmark_launch_stroke_11" />
+    <target android:name="stroke_12" android:animation="@animator/melo_wordmark_launch_stroke_12" />
+    <target android:name="stroke_13" android:animation="@animator/melo_wordmark_launch_stroke_13" />
+    <target android:name="stroke_14" android:animation="@animator/melo_wordmark_launch_stroke_14" />
+</animated-vector>

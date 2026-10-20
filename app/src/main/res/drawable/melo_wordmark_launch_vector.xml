@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Melo wordmark built on the exact Threads (Barcelona) construction:
+  every part of the mark is a stroked path revealed with trimPathEnd,
+  one stroke per target, 15 targets in reading order.
+
+  Left  : Melo wave-sticks logo (6 capsule bars + dot)
+  Right : "Melo" lettering in the Threads wordmark style —
+          butt-capped strokes, same stroke weights, same ~10° stem slant,
+          and the "e" is Meta's actual Threads "e" path (translated).
+
+  Stroke widths, slant and letter proportions are taken from the original
+  barcelona_wordmark_launch_vector.xml so the text reads as the same hand.
+  Meta's per-stroke clip-paths are intentionally omitted: they are tuned to
+  their exact glyph geometry and, on these letterforms, mask the stroke away.
+-->
+<vector android:height="36.0dp" android:width="130.0dp" android:viewportWidth="3.6111" android:viewportHeight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ===================== LOGO : WAVE STICKS ===================== -->
+
+    <group android:name="stroke_0_group">
+        <path android:name="stroke_0" android:pathData="M0.0860,0.1180 L0.0860,0.8730"
+            android:fillColor="@android:color/transparent" android:strokeColor="@color/barcelona_splash_screen_wordmark_icon_color"
+            android:strokeWidth="0.1360" android:strokeLineCap="round" android:strokeLineJoin="round"
+            android:strokeMiterLimit="4.0" android:trimPathStart="0.0" android:trimPathEnd="0.0" />
+    </group>
+
+    <group android:name="stroke_1_group">
+        <path android:name="stroke_1" android:pathData="M0.2540,0.2450 L0.2540,0.6760"
+            android:fillColor="@android:color/transparent" android:strokeColor="@color/barcelona_splash_screen_wordmark_icon_color"
+            android:strokeWidth="0.1180" android:strokeLineCap="round" android:strokeLineJoin="round"
+            android:strokeMiterLimit="4.0" android:trimPathStart="0.0" android:trimPathEnd="0.0" />
+    </group>
+
+    <group android:name="stroke_2_group">
+        <path android:name="stroke_2" android:pathData="M0.4000,0.3815 L0.4000,0.5535"
+            android:fillColor="@android:color/transparent" android:strokeColor="@color/barcelona_splash_screen_wordmark_icon_color"
+            android:strokeWidth="0.0910" android:strokeLineCap="round" android:strokeLineJoin="round"
+            android:strokeMiterLimit="4.0" android:trimPathStart="0.0" android:trimPathEnd="0.0" />
+    </group>
+
+    <group android:name="stroke_3_group">
+        <path android:name="stroke_3" android:pathData="M0.5360,0.3815 L0.5360,0.5535"
+            android:fillColor="@android:color/transparent" android:strokeColor="@color/barcelona_splash_screen_wordmark_icon_color"
+            android:strokeWidth="0.0910" android:strokeLineCap="round" android:strokeLineJoin="round"
+            android:strokeMiterLimit="4.0" android:trimPathStart="0.0" android:trimPathEnd="0.0" />
+    </group>
+
+    <group android:name="stroke_4_group">
+        <path android:name="stroke_4" android:pathData="M0.6820,0.2450 L0.6820,0.6760"
+            android:fillColor="@android:color/transparent" android:strokeColor="@color/barcelona_splash_screen_wordmark_icon_color"
+            android:strokeWidth="0.1180" android:strokeLineCap="round" android:strokeLineJoin="round"
+            android:strokeMiterLimit="4.0" android:trimPathStart="0.0" android:trimPathEnd="0.0" />
+    </group>
+
+    <group android:name="stroke_5_group">
+        <path android:name="stroke_5" android:pathData="M0.8500,0.1180 L0.8500,0.8730"
+            android:fillColor="@android:color/transparent" android:strokeColor="@color/barcelona_splash_screen_wordmark_icon_color"
+            android:strokeWidth="0.1360" android:strokeLineCap="round" android:strokeLineJoin="round"
+            android:strokeMiterLimit="4.0" android:trimPathStart="0.0" android:trimPathEnd="0.0" />
+    </group>
+
+    <group android:name="stroke_6_group">
+        <path android:name="stroke_6" android:pathData="M0.4680,0.8845 L0.4680,0.8855"
+            android:fillColor="@android:color/transparent" android:strokeColor="@color/barcelona_splash_screen_wordmark_icon_color"
+            android:strokeWidth="0.1270" android:strokeLineCap="round" android:strokeLineJoin="round"
+            android:strokeMiterLimit="4.0" android:trimPathStart="0.0" android:trimPathEnd="0.0" />
+    </group>
+
+    <!-- ===================== LETTERING : "Melo" =====================
+         Threads wordmark metrics:
+           cap / ascender top : 0.10 - 0.12
+           x-height top       : 0.33
+           baseline           : 0.92 - 0.93
+           stem width         : 0.15 - 0.20
+           stem slant         : ~10 degrees
+    -->
+
+    <!-- M left stem (slanted, like the Threads T/h stems) -->
+    <group android:name="stroke_7_group">
+        <path android:name="stroke_7" android:pathData="M1.0600,0.1200 L1.0300,0.9200"
+            android:fillColor="@android:color/transparent" android:strokeColor="@color/barcelona_splash_screen_wordmark_icon_color"
+            android:strokeWidth="0.1550" android:strokeLineCap="butt" android:strokeLineJoin="miter"
+            android:strokeMiterLimit="4.0" android:trimPathStart="0.0" android:trimPathEnd="0.0" />
+    </group>
+
+    <!-- M first diagonal -->
+    <group android:name="stroke_8_group">
+        <path android:name="stroke_8" android:pathData="M1.0700,0.1400 L1.3600,0.8400"
+            android:fillColor="@android:color/transparent" android:strokeColor="@color/barcelona_splash_screen_wordmark_icon_color"
+            android:strokeWidth="0.1450" android:strokeLineCap="butt" android:strokeLineJoin="miter"
+            android:strokeMiterLimit="4.0" android:trimPathStart="0.0" android:trimPathEnd="0.0" />
+    </group>
+
+    <!-- M second diagonal -->
+    <group android:name="stroke_9_group">
+        <path android:name="stroke_9" android:pathData="M1.3400,0.8400 L1.6300,0.1400"
+            android:fillColor="@android:color/transparent" android:strokeColor="@color/barcelona_splash_screen_wordmark_icon_color"
+            android:strokeWidth="0.1450" android:strokeLineCap="butt" android:strokeLineJoin="miter"
+            android:strokeMiterLimit="4.0" android:trimPathStart="0.0" android:trimPathEnd="0.0" />
+    </group>
+
+    <!-- M right stem -->
+    <group android:name="stroke_10_group">
+        <path android:name="stroke_10" android:pathData="M1.6300,0.1200 L1.6600,0.9200"
+            android:fillColor="@android:color/transparent" android:strokeColor="@color/barcelona_splash_screen_wordmark_icon_color"
+            android:strokeWidth="0.1550" android:strokeLineCap="butt" android:strokeLineJoin="miter"
+            android:strokeMiterLimit="4.0" android:trimPathStart="0.0" android:trimPathEnd="0.0" />
+    </group>
+
+    <!-- e : Meta Threads' actual 'e' path, translated to this wordmark -->
+    <group android:name="stroke_11_group">
+        <path android:name="stroke_11" android:pathData="M1.9588,0.5723 C1.9588 0.5723 2.4886 0.5631 2.4886 0.5631 C2.4886 0.5631 2.3498 0.4899 2.2959 0.4360 C2.2506 0.3907 2.2143 0.3299 2.1363 0.3299 C1.9919 0.3299 1.9886 0.3440 1.9240 0.4280 C1.8200 0.5633 1.8571 0.7458 1.9352 0.8025 C2.1089 0.9287 2.2901 0.7567 2.2901 0.7567"
+            android:fillColor="@android:color/transparent" android:strokeColor="@color/barcelona_splash_screen_wordmark_icon_color"
+            android:strokeWidth="0.1992" android:strokeLineCap="butt" android:strokeLineJoin="miter"
+            android:strokeMiterLimit="4.0" android:trimPathStart="0.0" android:trimPathEnd="0.0" />
+    </group>
+
+    <!-- l : slanted stem matching the Threads h/d stems -->
+    <group android:name="stroke_12_group">
+        <path android:name="stroke_12" android:pathData="M2.6400,0.9300 L2.7900,0.1000"
+            android:fillColor="@android:color/transparent" android:strokeColor="@color/barcelona_splash_screen_wordmark_icon_color"
+            android:strokeWidth="0.1987" android:strokeLineCap="butt" android:strokeLineJoin="miter"
+            android:strokeMiterLimit="4.0" android:trimPathStart="0.0" android:trimPathEnd="0.0" />
+    </group>
+
+    <!-- o top arc -->
+    <group android:name="stroke_13_group">
+        <path android:name="stroke_13" android:pathData="M2.9000,0.6200 C2.9000,0.4600 3.0300,0.3300 3.1900,0.3300 C3.3500,0.3300 3.4800,0.4600 3.4800,0.6200"
+            android:fillColor="@android:color/transparent" android:strokeColor="@color/barcelona_splash_screen_wordmark_icon_color"
+            android:strokeWidth="0.1992" android:strokeLineCap="butt" android:strokeLineJoin="miter"
+            android:strokeMiterLimit="4.0" android:trimPathStart="0.0" android:trimPathEnd="0.0" />
+    </group>
+
+    <!-- o bottom arc -->
+    <group android:name="stroke_14_group">
+        <path android:name="stroke_14" android:pathData="M3.4800,0.6200 C3.4800,0.7800 3.3500,0.9100 3.1900,0.9100 C3.0300,0.9100 2.9000,0.7800 2.9000,0.6200"
+            android:fillColor="@android:color/transparent" android:strokeColor="@color/barcelona_splash_screen_wordmark_icon_color"
+            android:strokeWidth="0.1992" android:strokeLineCap="butt" android:strokeLineJoin="miter"
+            android:strokeMiterLimit="4.0" android:trimPathStart="0.0" android:trimPathEnd="0.0" />
+    </group>
+</vector>

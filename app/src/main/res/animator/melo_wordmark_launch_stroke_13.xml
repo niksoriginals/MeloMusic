@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Melo wordmark stroke 13: same duration/easing slot as the Threads
+     (Barcelona) animator, converted to a forward trimPathEnd reveal. -->
+<set android:ordering="sequentially"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator android:duration="600" android:valueFrom="0" android:valueTo="0" android:valueType="floatType" android:propertyName="trimPathEnd" />
+    <objectAnimator android:interpolator="@animator/interp_barcelona_wordmark_launch_stroke_08__0" android:duration="108" android:valueFrom="0" android:valueTo="0.8728" android:valueType="floatType" android:propertyName="trimPathEnd" />
+    <objectAnimator android:interpolator="@animator/interp_barcelona_wordmark_launch_stroke_08__1" android:duration="16" android:valueFrom="0.8728" android:valueTo="1" android:valueType="floatType" android:propertyName="trimPathEnd" />
+    <objectAnimator android:duration="276" android:valueFrom="1" android:valueTo="1" android:valueType="floatType" android:propertyName="trimPathEnd" />
+</set>
